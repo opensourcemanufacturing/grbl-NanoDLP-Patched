@@ -1,3 +1,5 @@
+SolidRay defaults still in beta stage. Use this at your own risk!
+
 ![GitHub Logo](/doc/media/Grbl Logo 250px.png)
 
 
