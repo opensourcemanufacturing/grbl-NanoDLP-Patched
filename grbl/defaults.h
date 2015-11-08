@@ -83,6 +83,13 @@
   #include "defaults/defaults_oxcnc.h"
 #endif
 
+#ifdef DEFAULTS_SOLIDRAY
+  // Grbl settings for SolidRay SLA/DLP 3D printer
+  // http://solidray.kitprinter3d.com/
+  // http://impresorasla.com
+  #include "defaults/defaults_solidray.h"
+#endif
+
 #ifdef DEFAULTS_SIMULATOR
   // Settings only for Grbl Simulator (www.github.com/grbl/grbl-sim)
   #include "defaults/defaults_simulator.h"
