@@ -1,6 +1,9 @@
 /***********************************************************************
 This sketch compiles and uploads Grbl to your 328p-based Arduino! 
 
+This fork is used to compile Grbl with SolidRay defaults parameters,
+if you want to use it for another machine, please edit config.h
+
 To use:
 - First make sure you have imported Grbl source code into your Arduino
   IDE. There are details on our Github website on how to do this.
