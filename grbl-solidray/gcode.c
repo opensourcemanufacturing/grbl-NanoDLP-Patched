@@ -875,7 +875,8 @@ uint8_t gc_execute_line(char *line)
   // [9. Enable/disable feed rate or spindle overrides ]: NOT SUPPORTED
 
   // [10. Dwell ]:
-  if (gc_block.non_modal_command == NON_MODAL_DWELL) { mc_dwell(gc_block.values.p); }
+  // if (gc_block.non_modal_command == NON_MODAL_DWELL) { mc_dwell(gc_block.values.p); }
+  if (gc_block.non_modal_command == NON_MODAL_DWELL) { mc_dwell(gc_block.values.p); printString("Z_move_comp\r\n"); }
   
   // [11. Set active plane ]:
   gc_state.modal.plane_select = gc_block.modal.plane_select;  
