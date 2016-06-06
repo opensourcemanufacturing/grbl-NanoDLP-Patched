@@ -97,6 +97,12 @@
   #include "defaults/defaults_solidray2.h"
 #endif
 
+#ifdef DEFAULTS_er0.2
+  // Grbl settings for Microlay SLA/DLP 3D printer
+  // http://microlay.com/
+  #include "defaults/defaults_er0.2.h"
+#endif
+
 #ifdef DEFAULTS_SIMULATOR
   // Settings only for Grbl Simulator (www.github.com/grbl/grbl-sim)
   #include "defaults/defaults_simulator.h"
