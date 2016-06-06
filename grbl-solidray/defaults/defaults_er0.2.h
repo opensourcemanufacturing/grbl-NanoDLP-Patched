@@ -1,5 +1,5 @@
 /*
-  defaults_solidray.h - defaults settings configuration file
+  defaults_er0.2 - defaults settings configuration file
   Part of Grbl
   Copyright (c) 2012-2015 Sungeun K. Jeon
   Grbl is free software: you can redistribute it and/or modify
