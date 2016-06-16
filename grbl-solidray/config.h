@@ -32,7 +32,7 @@
 
 // Default settings. Used when resetting EEPROM. Change to desired name in defaults.h
 // #define DEFAULTS_SOLIDRAY
-define DEFAULTS_SOLIDRAY2
+#define DEFAULTS_SOLIDRAY2
 // #define DEFAULTS_er0.2
 
 // Serial baud rate
