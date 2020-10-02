@@ -52,7 +52,7 @@
 #define CMD_STATUS_REPORT '?'
 #define CMD_FEED_HOLD '!'
 #define CMD_CYCLE_START '~'
-#define CMD_RESET '§' // ctrl-x.
+#define CMD_RESET '^' // stock is 0x18 - ctrl-x.
 #define CMD_SAFETY_DOOR '@'
 
 // If homing is enabled, homing init lock sets Grbl into an alarm state upon power up. This forces
