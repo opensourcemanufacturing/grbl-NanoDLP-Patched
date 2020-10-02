@@ -103,6 +103,13 @@
   #include "defaults/defaults_er0.2.h"
 #endif
 
+#ifdef DEFAULTS_PEOPOLY_PHENOM
+  // Grbl settings for Phenom MSLA Printer
+  // https://www.facebook.com/Photonsters
+  // https://peopoly.net/
+  #include "defaults/defaults_peopoly_phenom.h"
+#endif
+
 #ifdef DEFAULTS_SIMULATOR
   // Settings only for Grbl Simulator (www.github.com/grbl/grbl-sim)
   #include "defaults/defaults_simulator.h"

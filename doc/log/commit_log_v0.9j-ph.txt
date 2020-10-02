@@ -1,0 +1,13 @@
+----------------
+Date: 2020-10-02
+Author: X3msnake
+Subject: Peopoly Phenom Stock Configs and NANODLP fork
+
+- Changed reset from 0x18 to § so it can be issued from NanoDLP terminal
+- Added Phenom Defaults
+    - Config.h
+    - defaults.h
+    - defaults_peopoly_phenom.h
+    
+- Changed Version to commit date suffix Photonsters(ph)
+    - grbl.h

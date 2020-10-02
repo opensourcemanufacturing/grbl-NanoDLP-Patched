@@ -32,8 +32,9 @@
 
 // Default settings. Used when resetting EEPROM. Change to desired name in defaults.h
 // #define DEFAULTS_SOLIDRAY
-#define DEFAULTS_SOLIDRAY2
+// #define DEFAULTS_SOLIDRAY2
 // #define DEFAULTS_er0.2
+#define DEFAULTS_PEOPOLY_PHENOM
 
 // Serial baud rate
 #define BAUD_RATE 115200
@@ -51,7 +52,7 @@
 #define CMD_STATUS_REPORT '?'
 #define CMD_FEED_HOLD '!'
 #define CMD_CYCLE_START '~'
-#define CMD_RESET 0x18 // ctrl-x.
+#define CMD_RESET '§' // ctrl-x.
 #define CMD_SAFETY_DOOR '@'
 
 // If homing is enabled, homing init lock sets Grbl into an alarm state upon power up. This forces
