@@ -9,6 +9,38 @@ This version is forked from the SolidRay project (that is forked from the origin
 
 
 ***
+  - **IMPORTANT INFO WHEN UPGRADING TO GRBL v0.9 :** 
+  - Baudrate is now **115200** (Up from 9600). 
+  - Homing cycle updated. Located based on switch trigger, rather than release point.
+  - Variable spindle is now enabled by default. Z-limit(D12) and spindle enable(D11) have switched to access the hardware PWM on D11. Homing will not work if you do not re-wire your Z-limit switch to D12.
+
+***
+
+``` 
+List of Supported G-Codes in Grbl v0.9 Master:
+  - Non-Modal Commands: G4, G10L2, G10L20, G28, G30, G28.1, G30.1, G53, G92, G92.1
+  - Motion Modes: G0, G1, G2, G3, G38.2, G38.3, G38.4, G38.5, G80
+  - Feed Rate Modes: G93, G94
+  - Unit Modes: G20, G21
+  - Distance Modes: G90, G91
+  - Arc IJK Distance Modes: G91.1
+  - Plane Select Modes: G17, G18, G19
+  - Tool Length Offset Modes: G43.1, G49
+  - Cutter Compensation Modes: G40
+  - Coordinate System Modes: G54, G55, G56, G57, G58, G59
+  - Control Modes: G61
+  - Program Flow: M0, M1, M2, M30*
+  - Coolant Control: M7*, M8, M9
+  - Spindle Control: M3, M4, M5
+  - Valid Non-Command Words: F, I, J, K, L, N, P, R, S, T, X, Y, Z
+```
+
+-------------
+Grbl is an open-source project and fueled by the free-time of our intrepid administrators and altruistic users. If you'd like to donate, all proceeds will be used to help fund supporting hardware and testing equipment. Thank you!
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CUGXJHXA36BYW)
+
+-------------
 
 Grbl is a no-compromise, high performance, low cost alternative to parallel-port-based motion control for CNC milling. It will run on a vanilla Arduino (Duemillanove/Uno) as long as it sports an Atmega 328. 
 
@@ -25,13 +57,6 @@ Grbl includes full acceleration management with look ahead. That means the contr
 * Lead Developer [_2011 - Current_]: Sungeun(Sonny) K. Jeon, Ph.D. (USA) aka @chamnit
 
 * Lead Developer [_2009 - 2011_]: Simen Svale Skogsrud (Norway). aka The Originator/Creator/Pioneer/Father of Grbl.
-
-***
-
-  - **IMPORTANT INFO WHEN UPGRADING TO GRBL v0.9 :** 
-  - Baudrate is now **115200** (Up from 9600). 
-  - Homing cycle updated. Located based on switch trigger, rather than release point.
-  - Variable spindle is now enabled by default. Z-limit(D12) and spindle enable(D11) have switched to access the hardware PWM on D11. Homing will not work if you do not re-wire your Z-limit switch to D12.
 
 ***
 
@@ -69,28 +94,3 @@ Grbl includes full acceleration management with look ahead. That means the contr
   - **Optional Limit Pin Sharing**
   - **Optional Variable Spindle Speed Output**
   - **Additional Compile-Time Feature Options**
-
--
-``` 
-List of Supported G-Codes in Grbl v0.9 Master:
-  - Non-Modal Commands: G4, G10L2, G10L20, G28, G30, G28.1, G30.1, G53, G92, G92.1
-  - Motion Modes: G0, G1, G2, G3, G38.2, G38.3, G38.4, G38.5, G80
-  - Feed Rate Modes: G93, G94
-  - Unit Modes: G20, G21
-  - Distance Modes: G90, G91
-  - Arc IJK Distance Modes: G91.1
-  - Plane Select Modes: G17, G18, G19
-  - Tool Length Offset Modes: G43.1, G49
-  - Cutter Compensation Modes: G40
-  - Coordinate System Modes: G54, G55, G56, G57, G58, G59
-  - Control Modes: G61
-  - Program Flow: M0, M1, M2, M30*
-  - Coolant Control: M7*, M8, M9
-  - Spindle Control: M3, M4, M5
-  - Valid Non-Command Words: F, I, J, K, L, N, P, R, S, T, X, Y, Z
-```
-
--------------
-Grbl is an open-source project and fueled by the free-time of our intrepid administrators and altruistic users. If you'd like to donate, all proceeds will be used to help fund supporting hardware and testing equipment. Thank you!
-
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CUGXJHXA36BYW)
