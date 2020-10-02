@@ -1,6 +1,11 @@
-SolidRay defaults still in beta stage. Use this at your own risk!
+### NanoDLP GRBL 0.9j Patched version
 
-![GitHub Logo](/doc/media/Grbl Logo 250px.png)
+This NanoDLP version adds Z_move_comp report string to the dwell commad (G4 Pxx) enabling the automatic sync of NanoDLP using the command [[WaitForDoneMessage]];
+
+The way to use this is to send a dwell command after the Z motion commands, the dwell only runs on the microprocessor after all the other commands have been executed and will return a serial string Z_move_comp that NanoDLP is waiting for with [[WaitForDoneMessage]]; command.
+
+This version is forked from the SolidRay project (that is forked from the original grbl0.9j)
+
 
 
 ***
@@ -23,31 +28,10 @@ Grbl includes full acceleration management with look ahead. That means the contr
 
 ***
 
-### Official Supporters of the Grbl CNC Project
-![Official Supporters](https://dl.dropboxusercontent.com/u/2221997/Contributors.png)
-
-***
-
-_**Master Branch:**_
-* [Grbl v0.9j Atmega328p 16mhz 115200baud with generic defaults](http://bit.ly/1I8Ey4S) _(2015-09-30)_
-* [Grbl v0.9j Atmega328p 16mhz 115200baud with ShapeOko2 defaults](http://bit.ly/1OjUSia) _(2015-09-30)_
   - **IMPORTANT INFO WHEN UPGRADING TO GRBL v0.9 :** 
   - Baudrate is now **115200** (Up from 9600). 
   - Homing cycle updated. Located based on switch trigger, rather than release point.
   - Variable spindle is now enabled by default. Z-limit(D12) and spindle enable(D11) have switched to access the hardware PWM on D11. Homing will not work if you do not re-wire your Z-limit switch to D12.
-
-_**Archives:**_
-* [Grbl v0.9i Atmega328p 16mhz 115200baud with generic defaults](http://bit.ly/1EiviDk) 
-* [Grbl v0.9i Atmega328p 16mhz 115200baud with ShapeOko2 defaults](http://bit.ly/1NYIfKl) 
-* [Grbl v0.9g Atmega328p 16mhz 115200baud with generic defaults](http://bit.ly/1m8E1Qa) 
-* [Grbl v0.9g Atmega328p 16mhz 115200baud with ShapeOko2 defaults](http://bit.ly/1kOAzig) 
-* [Grbl v0.8c Atmega328p 16mhz 9600baud](http://bit.ly/SSdCJE)
-* [Grbl v0.7d Atmega328p 16mhz 9600baud](http://bit.ly/ZhL15G)
-* [Grbl v0.6b Atmega328p 16mhz 9600baud](http://bit.ly/VD04A5)
-* [Grbl v0.51 Atmega328p 16mhz 9600baud](http://bit.ly/W75BS1)
-* [Grbl v0.6b Atmega168 16mhz 9600baud](http://bit.ly/SScWnE)
-* [Grbl v0.51 Atmega168 16mhz 9600baud](http://bit.ly/VXyrYu)
-
 
 ***
 
