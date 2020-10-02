@@ -6,16 +6,6 @@ The way to use this is to send a dwell command after the Z motion commands, the 
 
 This version is forked from the SolidRay project (that is forked from the original grbl0.9j)
 
-
-
-***
-  - **IMPORTANT INFO WHEN UPGRADING TO GRBL v0.9 :** 
-  - Baudrate is now **115200** (Up from 9600). 
-  - Homing cycle updated. Located based on switch trigger, rather than release point.
-  - Variable spindle is now enabled by default. Z-limit(D12) and spindle enable(D11) have switched to access the hardware PWM on D11. Homing will not work if you do not re-wire your Z-limit switch to D12.
-
-***
-
 ``` 
 List of Supported G-Codes in Grbl v0.9 Master:
   - Non-Modal Commands: G4, G10L2, G10L20, G28, G30, G28.1, G30.1, G53, G92, G92.1
@@ -34,6 +24,14 @@ List of Supported G-Codes in Grbl v0.9 Master:
   - Spindle Control: M3, M4, M5
   - Valid Non-Command Words: F, I, J, K, L, N, P, R, S, T, X, Y, Z
 ```
+
+***
+  - **IMPORTANT INFO WHEN UPGRADING TO GRBL v0.9 :** 
+  - Baudrate is now **115200** (Up from 9600). 
+  - Homing cycle updated. Located based on switch trigger, rather than release point.
+  - Variable spindle is now enabled by default. Z-limit(D12) and spindle enable(D11) have switched to access the hardware PWM on D11. Homing will not work if you do not re-wire your Z-limit switch to D12.
+
+***
 
 -------------
 Grbl is an open-source project and fueled by the free-time of our intrepid administrators and altruistic users. If you'd like to donate, all proceeds will be used to help fund supporting hardware and testing equipment. Thank you!
